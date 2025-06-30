@@ -11,5 +11,9 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   @Input() menuVisible = false;
-  @Output() toggleMenu = new EventEmitter<void>();
+  @Output() menuToggle = new EventEmitter<void>();
+
+  onMenuClick(): void {
+    this.menuToggle.emit();
+  }
 }

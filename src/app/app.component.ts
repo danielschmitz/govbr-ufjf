@@ -20,8 +20,9 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 })
 export class AppComponent {
   isMenuVisible = true;
+  title = "govbr-ufjf"
 
-  toggleMenu() {
+  menuToggle() {
     this.isMenuVisible = !this.isMenuVisible;
   }
 }
