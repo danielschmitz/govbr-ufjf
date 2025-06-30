@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meu-projeto-standalone": {
+    "govbr-ufjf": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/meu-projeto-standalone",
+            "outputPath": "dist/govbr-ufjf",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "meu-projeto-standalone:build:production"
+              "buildTarget": "govbr-ufjf:build:production"
             },
             "development": {
-              "buildTarget": "meu-projeto-standalone:build:development"
+              "buildTarget": "govbr-ufjf:build:development"
             }
           },
           "defaultConfiguration": "development"
